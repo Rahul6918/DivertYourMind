@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Divert Your Mind",
+  "version": "0.1.1",
+  "description":"Divert Your Mind from bad things and websites and stay focus to chase your dreams !!!",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["Content.js"]
+    }
+  ],
+  "icons": { "16":"icon16.png","48": "icon48.png", "128": "icon128.png" },
+  "browser_action": {
+    "default_popup": "Popup.html",
+    "default_title": "Divert Your Mind"
+  }
+}
